@@ -47,6 +47,15 @@ public class Main {
        numberOfBottleAfterWork = workingHours * numberOfBottle / numberOfMinutes;
        System.out.println("За " + workingHours + " минут машина произвела " + numberOfBottleAfterWork + " штук бутылок");
 
+       byte totalCansOfPaintNeeded = 120;
+       byte cansOfWhitePaintForOneClass = 2;
+       byte cansOfBrownPaintForOneClass = 4;
+       int numberOfClasses = totalCansOfPaintNeeded / (cansOfWhitePaintForOneClass + cansOfBrownPaintForOneClass);
+       int cansOfWhitePaintForSchool = numberOfClasses * cansOfWhitePaintForOneClass;
+       int cansOfBrownPaintForSchool = numberOfClasses * cansOfBrownPaintForOneClass;
+       System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + cansOfWhitePaintForSchool + " банок белой краски и " + cansOfBrownPaintForSchool + " банок коричневой краски");
+
+
 
     }
 }

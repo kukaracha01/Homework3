@@ -13,6 +13,15 @@ public class Main {
        double endWithADot = 4.74858965654;
        System.out.println("Значение переменной endWithADot с типом double равно " + endWithADot);
 
+       short a = -159;
+       double b = 2.786;
+       float c = 27.12f;
+       byte d = 67;
+       int e = 569;
+       short f = 27897;
+       long g = 987678965549L;
+
+
 
 
 

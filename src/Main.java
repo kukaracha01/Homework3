@@ -28,6 +28,25 @@ public class Main {
        int numberOfSheetsPerStudent = totalAmountOfPaper / (theFirstNumberOfStudents + theSecondNumberOfStudents + theThirdNumberOfStudents);
        System.out.println("На каждого ученика рассчитано " + numberOfSheetsPerStudent + " листов бумаги");
 
+       byte numberOfBottle = 16;
+       byte numberOfMinutes = 2;
+       long workingHours = 20L;
+       long numberOfBottleAfterWork = workingHours * numberOfBottle / numberOfMinutes;
+       System.out.println("За " + workingHours + " минут машина произвела " + numberOfBottleAfterWork + " штук бутылок");
+       byte minutePerHour = 60;
+       byte hoursPerDay = 24;
+       workingHours = minutePerHour * hoursPerDay;
+       numberOfBottleAfterWork = workingHours * numberOfBottle / numberOfMinutes;
+       System.out.println("За " + workingHours + " минут машина произвела " + numberOfBottleAfterWork + " штук бутылок");
+       byte days = 3;
+       workingHours = workingHours * days;
+       numberOfBottleAfterWork = workingHours * numberOfBottle / numberOfMinutes;
+       System.out.println("За " + workingHours + " минут машина произвела " + numberOfBottleAfterWork + " штук бутылок");
+       byte daysPerMonth = 30;
+       workingHours = minutePerHour * hoursPerDay * daysPerMonth;
+       numberOfBottleAfterWork = workingHours * numberOfBottle / numberOfMinutes;
+       System.out.println("За " + workingHours + " минут машина произвела " + numberOfBottleAfterWork + " штук бутылок");
+
 
     }
 }

@@ -21,8 +21,12 @@ public class Main {
        short f = 27897;
        long g = 987678965549L;
 
-
-
+       byte theFirstNumberOfStudents = 23;
+       byte theSecondNumberOfStudents = 27;
+       byte theThirdNumberOfStudents = 30;
+       short totalAmountOfPaper = 480;
+       int numberOfSheetsPerStudent = totalAmountOfPaper / (theFirstNumberOfStudents + theSecondNumberOfStudents + theThirdNumberOfStudents);
+       System.out.println("На каждого ученика рассчитано " + numberOfSheetsPerStudent + " листов бумаги");
 
 
     }

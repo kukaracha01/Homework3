@@ -70,6 +70,16 @@ public class Main {
        float weightOfBreakfastKg = (float) weightOfBreakfastGr / numberOfGrInOneKg;
        System.out.println("Вес спортзавтрака равен " + weightOfBreakfastKg + " килограмма");
 
+       numberOfGrInOneKg = 1000;
+       byte weightToResetKg = 7;
+       short minWeightLossPerDayGr = 250;
+       short maxWeightLossPerDayGr = 500;
+       int maxNumberOfDayForReset = (weightToResetKg * numberOfGrInOneKg) / minWeightLossPerDayGr;
+       System.out.println("Максимально для сброса веса нужно " + maxNumberOfDayForReset + " дней");
+       int minNumberOfDayForReset = (weightToResetKg * numberOfGrInOneKg) / maxWeightLossPerDayGr;
+       System.out.println("Минимально для сброса веса нужно " + minNumberOfDayForReset + " дней");
+       int daysOnAverageForReset = (minNumberOfDayForReset + maxNumberOfDayForReset) / 2;
+       System.out.println("В среднем для сброса веса нужен " + daysOnAverageForReset + " день");
 
 
 

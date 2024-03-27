@@ -55,6 +55,22 @@ public class Main {
        int cansOfBrownPaintForSchool = numberOfClasses * cansOfBrownPaintForOneClass;
        System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + cansOfWhitePaintForSchool + " банок белой краски и " + cansOfBrownPaintForSchool + " банок коричневой краски");
 
+       byte numberOfBananas = 5;
+       byte weightOfOneBananaGr = 80;
+       short amountOfMilkMl = 200;
+       byte milkWeightIn100MlGr = 105;
+       byte milk100Ml = 100;
+       byte numberOfIceCreamBriquettes = 2;
+       byte weightOfOneIceCreamBriquetteGr = 100;
+       byte numberOfEggs = 4;
+       byte weightOfOneEggGr = 70;
+       int weightOfBreakfastGr = (numberOfBananas * weightOfOneBananaGr) + (amountOfMilkMl * milkWeightIn100MlGr / milk100Ml) + (numberOfIceCreamBriquettes * weightOfOneIceCreamBriquetteGr) + (numberOfEggs * weightOfOneEggGr);
+       System.out.println("Вес спортзавтрака равен " + weightOfBreakfastGr + " грамм");
+       short numberOfGrInOneKg = 1000;
+       float weightOfBreakfastKg = (float) weightOfBreakfastGr / numberOfGrInOneKg;
+       System.out.println("Вес спортзавтрака равен " + weightOfBreakfastKg + " килограмма");
+
+
 
 
     }

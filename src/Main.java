@@ -101,10 +101,5 @@ public class Main {
        float salaryKristinaOnYearAfterIncrease = salaryKristinaOnMonthAfterIncrease * monthsOnYear;
        float diffSalaryKristina = salaryKristinaOnYearAfterIncrease - salaryKristinaOnYearNowRub;
        System.out.println("Кристина теперь получает " + salaryKristinaOnMonthAfterIncrease + " рублей. Годовой доход вырос на " + diffSalaryKristina + " рублей");
-
-
-
-
-
     }
 }

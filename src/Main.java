@@ -81,6 +81,29 @@ public class Main {
        int daysOnAverageForReset = (minNumberOfDayForReset + maxNumberOfDayForReset) / 2;
        System.out.println("В среднем для сброса веса нужен " + daysOnAverageForReset + " день");
 
+       int salaryMashaOnMonthNowRub = 67760;
+       int salaryDenisOnMonthNowRub = 83690;
+       int salaryKristinaOnMonthNowRub = 76230;
+       float increasePerYearPer = 1.1f;
+       byte monthsOnYear = 12;
+       int salaryMashaOnYearNowRub = salaryMashaOnMonthNowRub * monthsOnYear;
+       int salaryDenisOnYearNowRub = salaryDenisOnMonthNowRub * monthsOnYear;
+       int salaryKristinaOnYearNowRub = salaryKristinaOnMonthNowRub * monthsOnYear;
+       float salaryMashaOnMouthAfterIncrease = salaryMashaOnMonthNowRub * increasePerYearPer;
+       float salaryMashaOnYearAfterIncrease = salaryMashaOnMouthAfterIncrease * monthsOnYear;
+       float diffSalaryMasha = salaryMashaOnYearAfterIncrease - salaryMashaOnYearNowRub;
+       System.out.println("Маша теперь получает " + salaryMashaOnMouthAfterIncrease + " рублей. Годовой доход вырос на " + diffSalaryMasha + " рублей");
+       float salaryDenisOnMonthAfterIncrease = salaryDenisOnMonthNowRub * increasePerYearPer;
+       float salaryDenisOnYearAfterIncrease = salaryDenisOnMonthAfterIncrease * monthsOnYear;
+       float diffSalaryDenis = salaryDenisOnYearAfterIncrease - salaryDenisOnYearNowRub;
+       System.out.println("Денис теперь получает " + salaryDenisOnMonthAfterIncrease + " рублей. Годовой доход вырос на " + diffSalaryDenis + " рублей");
+       float salaryKristinaOnMonthAfterIncrease = salaryKristinaOnMonthNowRub * increasePerYearPer;
+       float salaryKristinaOnYearAfterIncrease = salaryKristinaOnMonthAfterIncrease * monthsOnYear;
+       float diffSalaryKristina = salaryKristinaOnYearAfterIncrease - salaryKristinaOnYearNowRub;
+       System.out.println("Кристина теперь получает " + salaryKristinaOnMonthAfterIncrease + " рублей. Годовой доход вырос на " + diffSalaryKristina + " рублей");
+
+
+
 
 
     }
